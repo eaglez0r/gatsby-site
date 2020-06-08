@@ -8,9 +8,9 @@ import Calculator from "../components/calculator"
 
 export default () => (
   <Layout>
-    <SEO title="brand new page, pog." />
-    <h1>Calculator that kind of works</h1>
+    <SEO title="Calculator" />
+    <h1>Calculator! </h1>
     <Calculator />
-    <Link to="/">Go back to the homepage</Link>
+    <br />
   </Layout>
 )

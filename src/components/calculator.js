@@ -22,8 +22,8 @@ const Calculator = () => {
   }
 
   return (
-    <div className="theonecalc">
-      <h2 className="results">{digits}</h2>
+    <CalcWrapper>
+      <Results>{digits}</Results>
       <MathButton className="mathbutton" value={1} onClick={handleClick}>
         1
       </MathButton>
@@ -73,29 +73,46 @@ const Calculator = () => {
       <MathButton className="mathbutton" onClick={calculate}>
         =
       </MathButton>
-      <button className="mathbuttonReturn" onClick={removeLast}>
-        Return
-      </button>
+      <MathButton onClick={removeLast}>Backspace</MathButton>
       <MathButton className="mathbutton" onClick={resetButton}>
         Reset
       </MathButton>
-    </div>
+    </CalcWrapper>
   )
 }
 
 export default Calculator
 
 const MathButton = styled.button`
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  background: rgb(145, 92, 182);
-  padding: 15px 40px;
-  border-radius: 4px;
-  font-weight: normal;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
+  width: 120px;
+  height: 60px;
+  background: lightgray;
+  margin: 15px;
+  font-size: 20px;
+  border-radius: 15%;
   &:hover {
-    color: rgba(255, 255, 255, 1);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+    text-decoration: none;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 4px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    color: black;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
   }
+`
+
+const Backspace = styled.button`
+  color: red;
+`
+
+const Results = styled.h2`
+  border-style: solid;
+  border-color: black;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
+`
+
+const CalcWrapper = styled.div`
+  border-color: black;
+  border-style: solid;
 `
