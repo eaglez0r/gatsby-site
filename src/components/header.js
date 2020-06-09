@@ -40,6 +40,7 @@ const Header = ({ siteTitle }) => (
               style={{
                 color: `black`,
                 textDecoration: `none`,
+                fontWeight: `bold`,
               }}
               activeStyle={activeStyle}
               to="/"
@@ -52,6 +53,7 @@ const Header = ({ siteTitle }) => (
               style={{
                 color: `black`,
                 textDecoration: `none`,
+                fontWeight: `bold`,
               }}
               activeStyle={activeStyle}
               to="/about"
@@ -65,6 +67,7 @@ const Header = ({ siteTitle }) => (
               style={{
                 color: `black`,
                 textDecoration: `none`,
+                fontWeight: `bold`,
               }}
               to="/page-3"
             >
