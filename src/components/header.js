@@ -74,6 +74,32 @@ const Header = ({ siteTitle }) => (
               Calculator
             </Link>
           </ListItem>
+          <ListItem>
+            <Link
+              activeStyle={activeStyle}
+              style={{
+                color: `black`,
+                textDecoration: `none`,
+                fontWeight: `bold`,
+              }}
+              to="/page-4"
+            >
+              Showing keyPress/clicky counter
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              activeStyle={activeStyle}
+              style={{
+                color: `black`,
+                textDecoration: `none`,
+                fontWeight: `bold`,
+              }}
+              to="/page-5"
+            >
+              Fetching data from an API
+            </Link>
+          </ListItem>
         </ul>
       </nav>
     </div>
