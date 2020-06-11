@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
-export const useGetWeather = url => {
+export default url => {
   const [state, setState] = useState({ loading: true, weather: null })
   useEffect(() => {
     async function fetchApi() {

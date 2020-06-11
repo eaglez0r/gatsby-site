@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { useGetWeather } from "./Hook.js"
+import useGetWeather from "./Hook.js"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
