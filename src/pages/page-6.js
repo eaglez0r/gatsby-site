@@ -10,15 +10,13 @@ const SixthPage = () => {
     <Layout>
       <SEO title="Weather" />
       <div>
-        {useGetWeather(
-          "https://api.openweathermap.org/data/2.5/weather?id=3448433&APPID=92a0f139f156286198cf8bac00a51dc6"
-        )}
-        {useGetWeather(
-          "https://api.openweathermap.org/data/2.5/weather?id=4634946&APPID=92a0f139f156286198cf8bac00a51dc6"
-        )}
-        {useGetWeather(
-          "https://api.openweathermap.org/data/2.5/weather?id=2643743&APPID=92a0f139f156286198cf8bac00a51dc6"
-        )}
+        {useGetWeather(3448433)}
+        {useGetWeather(4634946)}
+        {useGetWeather(2643743)}
+        {useGetWeather(6173331)}
+        {useGetWeather(5128581)}
+        {useGetWeather(2800866)}
+        {useGetWeather(2013159)}
       </div>
     </Layout>
   )
