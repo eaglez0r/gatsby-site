@@ -6,7 +6,7 @@ import styled from "styled-components"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rgba(255, 200, 255, 0.7)`,
+      background: `rgba(50, 200, 200, 0.6)`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -98,6 +98,32 @@ const Header = ({ siteTitle }) => (
               to="/page-5"
             >
               Fetching data from an API
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              activeStyle={activeStyle}
+              style={{
+                color: `black`,
+                textDecoration: `none`,
+                fontWeight: `bold`,
+              }}
+              to="/page-6"
+            >
+              Weather
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              activeStyle={activeStyle}
+              style={{
+                color: `black`,
+                textDecoration: `none`,
+                fontWeight: `bold`,
+              }}
+              to="/page-7"
+            >
+              idk yet
             </Link>
           </ListItem>
         </ul>

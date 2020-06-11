@@ -4,9 +4,20 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Button from "@material-ui/core/Button"
 
 const FifthPage = () => {
-  const [state, setState] = useState({ loading: true, person: null })
+  const [state, setState] = useState({
+    loading: true,
+    person: null,
+    counter: 0,
+  })
+  const handleClick = () => {
+    let newCounter = state.counter
+    newCounter += 1
+    setState({ ...state, counter: newCounter })
+    console.log(state.counter)
+  }
   useEffect(() => {
     async function fetchApi() {
       const url = "https://api.randomuser.me/"
@@ -15,7 +26,7 @@ const FifthPage = () => {
       setState({ ...state, loading: false, person: data.results[0] })
     }
     fetchApi()
-  }, [])
+  }, [state.counter])
 
   return (
     <Layout>
@@ -36,6 +47,19 @@ const FifthPage = () => {
           <div>
             <img src={state.person.picture.large} />
           </div>
+          <Button variant="contained" color="secondary" onClick={handleClick}>
+            new person
+          </Button>
+          <br />
+          <br />
+          <p>
+            After making this, I added this button to make another API call on
+            click.
+          </p>
+          <p>
+            It seems to break if you click too fast, though. Don't click too
+            fast. Pls
+          </p>
         </div>
       )}
     </Layout>

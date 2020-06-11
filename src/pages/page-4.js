@@ -36,7 +36,7 @@ const Page4 = () => {
 
       <ClickyDiv>
         <p>Clicky counter: {counter}</p>
-        <Button variant="contained" color="secondary" onClick={handleClick}>
+        <Button variant="contained" color="primary" onClick={handleClick}>
           Clicky
         </Button>
       </ClickyDiv>
@@ -48,6 +48,7 @@ export default Page4
 
 const ClickyDiv = styled.div`
   border-style: solid;
-  border-color: pink;
+  border-color: black;
+  background-color: rgba(50, 50, 50, 0.2);
   width: 170px;
 `
