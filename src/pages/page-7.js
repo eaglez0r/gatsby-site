@@ -20,17 +20,19 @@ const SeventhPage = () => {
     try {
       cityInput = cityInput.current.value
       countryInput = countryInput.current.value
-    } catch (err) {
-      console.log(err)
+    } catch (error) {
+      setCity({
+        ...city,
+        weatherIds: [],
+      })
     }
     for (let i = 0; i < cityData.length; i++) {
       if (
-        cityInput === cityData[i].name &&
-        countryInput === cityData[i].country
+        cityInput.toUpperCase() === cityData[i].name.toUpperCase() &&
+        countryInput.toUpperCase() === cityData[i].country.toUpperCase()
       ) {
         setCity({
           ...city,
-          city: cityData[i].id,
           weatherIds: [...city.weatherIds, cityData[i].id],
         })
       }
@@ -39,7 +41,7 @@ const SeventhPage = () => {
 
   return (
     <Layout>
-      <SEO title="pepega" />
+      <SEO title="Weather" />
       <div>
         <form onSubmit={handleSubmit}>
           <input required placeholder="city" ref={cityInput} type="text" />
