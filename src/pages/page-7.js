@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
-import cityData from "../../public/static/d/city.list.json"
+import cityData from "../../city-list.json"
 import WeatherComponent from "../components/weather"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,8 +17,12 @@ const SeventhPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    cityInput = cityInput.current.value
-    countryInput = countryInput.current.value
+    try {
+      cityInput = cityInput.current.value
+      countryInput = countryInput.current.value
+    } catch (err) {
+      console.log(err)
+    }
     for (let i = 0; i < cityData.length; i++) {
       if (
         cityInput === cityData[i].name &&
@@ -38,8 +42,13 @@ const SeventhPage = () => {
       <SEO title="pepega" />
       <div>
         <form onSubmit={handleSubmit}>
-          <input placeholder="city" ref={cityInput} type="text" />
-          <input placeholder="country" ref={countryInput} type="text" />
+          <input required placeholder="city" ref={cityInput} type="text" />
+          <input
+            required
+            placeholder="country"
+            ref={countryInput}
+            type="text"
+          />
           <button type="submit">Search</button>
         </form>
         <MakesBox weatherIds={city.weatherIds} />
