@@ -123,7 +123,7 @@ const Header = ({ siteTitle }) => (
               }}
               to="/page-7"
             >
-              idk yet
+              Weather search
             </Link>
           </ListItem>
         </ul>

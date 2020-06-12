@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Button from "@material-ui/core/Button"
 import CircularProgress from "@material-ui/core/CircularProgress"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-const WeatherBoxes = id => {
+const WeatherComponent = props => {
   const [state, setState] = useState({
     temperature: "C",
     loading: true,
@@ -15,7 +18,7 @@ const WeatherBoxes = id => {
   })
   useEffect(() => {
     async function fetchApi() {
-      let url = `https://api.openweathermap.org/data/2.5/weather?id=${id}&APPID=92a0f139f156286198cf8bac00a51dc6`
+      let url = `https://api.openweathermap.org/data/2.5/weather?id=${props.id}&APPID=92a0f139f156286198cf8bac00a51dc6`
       const response = await fetch(url)
       const data = await response.json()
       const tempInC = (data.main.temp - 273.15).toFixed(1) + " °C"
@@ -103,7 +106,7 @@ const WeatherBoxes = id => {
   )
 }
 
-export default WeatherBoxes
+export default WeatherComponent
 
 const WeatherDiv = styled.div`
   border-style: solid;
