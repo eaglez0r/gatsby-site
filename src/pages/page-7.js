@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
-import cityData from "../../city-list.json"
+import cityData from "../city-list.json"
 import WeatherComponent from "../components/weather"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,31 +10,39 @@ import MakesBox from "../components/MakesBox"
 const SeventhPage = () => {
   const [city, setCity] = useState({
     weatherIds: [],
+    cityInput: "",
+    countryInput: "",
   })
 
-  let cityInput = React.createRef()
-  let countryInput = React.createRef()
+  const handleChange = e => {
+    setCity({
+      ...city,
+      cityInput: e.target.value,
+    })
+  }
+
+  const handleChange2 = e => {
+    setCity({
+      ...city,
+      countryInput: e.target.value,
+    })
+  }
 
   const handleSubmit = e => {
     e.preventDefault()
-    try {
-      cityInput = cityInput.current.value
-      countryInput = countryInput.current.value
-    } catch (error) {
-      setCity({
-        ...city,
-        weatherIds: [],
-      })
-    }
+
     for (let i = 0; i < cityData.length; i++) {
       if (
-        cityInput.toUpperCase() === cityData[i].name.toUpperCase() &&
-        countryInput.toUpperCase() === cityData[i].country.toUpperCase()
+        city.cityInput.toUpperCase() === cityData[i].name.toUpperCase() &&
+        city.countryInput.toUpperCase() === cityData[i].country.toUpperCase()
       ) {
         setCity({
           ...city,
           weatherIds: [...city.weatherIds, cityData[i].id],
         })
+        break
+      } else if (i == cityData.length - 1) {
+        alert("City not found.")
       }
     }
   }
@@ -44,11 +52,18 @@ const SeventhPage = () => {
       <SEO title="Weather" />
       <div>
         <form onSubmit={handleSubmit}>
-          <input required placeholder="city" ref={cityInput} type="text" />
+          <input
+            required
+            placeholder="city"
+            value={city.cityInput}
+            onChange={handleChange}
+            type="text"
+          />
           <input
             required
             placeholder="country"
-            ref={countryInput}
+            onChange={handleChange2}
+            value={city.countryInput}
             type="text"
           />
           <button type="submit">Search</button>

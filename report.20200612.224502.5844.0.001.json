@@ -1,0 +1,527 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200612.224502.5844.0.001.json",
+    "dumpEventTime": "2020-06-12T22:45:02Z",
+    "dumpEventTimeStamp": "1592012702965",
+    "processId": 5844,
+    "threadId": null,
+    "cwd": "C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site",
+    "commandLine": [
+      "node",
+      "C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\.cache\\tmp-10244-fTDziib3Q5v9"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.3/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.14393",
+    "osVersion": "Windows 10 Enterprise 2016 LTSB",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz",
+        "speed": 2993,
+        "user": 27362328,
+        "nice": 0,
+        "sys": 15294109,
+        "idle": 127962328,
+        "irq": 2946656
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz",
+        "speed": 2993,
+        "user": 26324703,
+        "nice": 0,
+        "sys": 9713125,
+        "idle": 134580750,
+        "irq": 963546
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz",
+        "speed": 2993,
+        "user": 29274218,
+        "nice": 0,
+        "sys": 8241062,
+        "idle": 133103296,
+        "irq": 111875
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3330 CPU @ 3.00GHz",
+        "speed": 2993,
+        "user": 29971203,
+        "nice": 0,
+        "sys": 7793234,
+        "idle": 132854140,
+        "irq": 102015
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "8c:89:a5:cf:64:4d",
+        "address": "2804:14c:48b:45e6:d844:e6be:a20c:c071",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "8c:89:a5:cf:64:4d",
+        "address": "2804:14c:48b:45e6:6df5:43f0:3688:1452",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "8c:89:a5:cf:64:4d",
+        "address": "2804:14c:48b:45e6:89a8:7492:19f4:33ed",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "8c:89:a5:cf:64:4d",
+        "address": "fe80::d844:e6be:a20c:c071",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "8c:89:a5:cf:64:4d",
+        "address": "192.168.0.2",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Conexão Local* 2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "2001:0:34f1:8072:34cf:c119:36ad:cc0d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Conexão Local* 2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::34cf:c119:36ad:cc0d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      }
+    ],
+    "host": "DESKTOP-3RMUSHK"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff651402449",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
+    },
+    {
+      "pc": "0x00007ff6514069a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
+    },
+    {
+      "pc": "0x00007ff651405828",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
+    },
+    {
+      "pc": "0x00007ff65153d8c2",
+      "symbol": "v8::base::CPU::has_sse+68658"
+    },
+    {
+      "pc": "0x00007ff651d59bbe",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff651d41c91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff651c0e1ec",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff651c19420",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff651c15f44",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff651c0b743",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff651c09db4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff651c2afbd",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff651991871",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff6521a6c4d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x000001b542a52c7e",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2155458560,
+    "totalCommittedMemory": 2155458560,
+    "usedMemory": 2145847120,
+    "availableMemory": 45172304,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2621440,
+        "committedMemory": 2621440,
+        "capacity": 1309320,
+        "used": 594592,
+        "available": 714728
+      },
+      "old_space": {
+        "memorySize": 1847734272,
+        "committedMemory": 1847734272,
+        "capacity": 1845113024,
+        "used": 1844321504,
+        "available": 791520
+      },
+      "code_space": {
+        "memorySize": 3051520,
+        "committedMemory": 3051520,
+        "capacity": 2509920,
+        "used": 2509920,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 6819840,
+        "committedMemory": 6819840,
+        "capacity": 3672720,
+        "used": 3672720,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 294023168,
+        "committedMemory": 294023168,
+        "capacity": 293861432,
+        "used": 293861432,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 946176,
+        "committedMemory": 946176,
+        "capacity": 854144,
+        "used": 854144,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1309320,
+        "used": 0,
+        "available": 1309320
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 175.437,
+    "kernelCpuSeconds": 27,
+    "cpuConsumptionPercent": 5.60612,
+    "maxRss": 2244251648,
+    "pageFaults": {
+      "IORequired": 2997755,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 15939,
+      "writes": 4779
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "add_path": "C:\\Users\\User\\Desktop\\cmder",
+    "aliases": "C:\\Users\\User\\Desktop\\cmder\\config\\user_aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANSICON": "116x1000 (116x27)",
+    "ANSICON_DEF": "7",
+    "APPDATA": "C:\\Users\\User\\AppData\\Roaming",
+    "architecture": "64",
+    "architecture_bits": "64",
+    "ccall": "call C:\\Users\\User\\Desktop\\cmder\\vendor\\bin\\cexec.cmd",
+    "cexec": "C:\\Users\\User\\Desktop\\cmder\\vendor\\bin\\cexec.cmd",
+    "CMDER_ALIASES": "1",
+    "CMDER_CLINK": "1",
+    "CMDER_CONFIGURED": "1",
+    "CMDER_INIT_END": "21:44:39,45",
+    "CMDER_INIT_START": "21:44:35,74",
+    "CMDER_ROOT": "C:\\Users\\User\\Desktop\\cmder",
+    "CMDER_SHELL": "cmd",
+    "CMDER_USER_FLAGS": " ",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-3RMUSHK",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "ConEmuANSI": "ON",
+    "ConEmuAnsiLog": "",
+    "ConEmuArgs": "/Icon \"C:\\Users\\User\\Desktop\\cmder\\icons\\cmder.ico\" /Title Cmder",
+    "ConEmuArgs2": "",
+    "ConEmuBackHWND": "0x00160244",
+    "ConEmuBaseDir": "C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBaseDirShort": "C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBuild": "191012",
+    "ConEmuCfgDir": "C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuConfig": "",
+    "ConEmuDir": "C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuDrawHWND": "0x0038057C",
+    "ConEmuDrive": "C:",
+    "ConEmuHooks": "Enabled",
+    "ConEmuHWND": "0x001103E6",
+    "ConEmuPalette": "Monokai",
+    "ConEmuPID": "15932",
+    "ConEmuServerPID": "5552",
+    "ConEmuTask": "{cmd::Cmder}",
+    "ConEmuWorkDir": "C:\\Users\\User\\Desktop\\cmder",
+    "ConEmuWorkDrive": "C:",
+    "debug_output": "0",
+    "depth": "1",
+    "dp0": "C:\\Users\\User\\AppData\\Roaming\\npm\\",
+    "fast_init": "0",
+    "feFlagName": " ",
+    "find_query": "C:\\\\Users\\\\User\\\\Desktop\\\\cmder",
+    "found": "1",
+    "GATSBY_BUILD_STAGE": "develop",
+    "gatsby_executing_command": "develop",
+    "GATSBY_LOGGER": "ink",
+    "gatsby_log_level": "normal",
+    "git_executable": "C:\\Program Files\\Git\\cmd\\git.exe",
+    "GIT_INSTALL_ROOT": "C:\\Program Files\\Git",
+    "git_locale": "\"C:\\Program Files\\Git\\usr\\bin\\locale.exe\"",
+    "GIT_VERSION_USER": "2.27.0.windows.1",
+    "HOME": "C:\\Users\\User",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\User",
+    "LANG": "pt_BR.UTF-8",
+    "lib_base": "call \"C:\\Users\\User\\Desktop\\cmder\\vendor\\lib\\lib_base.cmd\"",
+    "lib_console": "call \"C:\\Users\\User\\Desktop\\cmder\\vendor\\lib\\lib_console.cmd\"",
+    "lib_git": "call \"C:\\Users\\User\\Desktop\\cmder\\vendor\\lib\\lib_git.cmd\"",
+    "lib_path": "call \"C:\\Users\\User\\Desktop\\cmder\\vendor\\lib\\lib_path.cmd\"",
+    "lib_profile": "call \"C:\\Users\\User\\Desktop\\cmder\\vendor\\lib\\lib_profile.cmd\"",
+    "LOCALAPPDATA": "C:\\Users\\User\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-3RMUSHK",
+    "max_depth": "1",
+    "nix_tools": "1",
+    "NODE_ENV": "development",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OLD_PATH": "C:\\Users\\User\\Desktop\\cmder\\bin;C:\\Users\\User\\Desktop\\cmder\\vendor\\bin;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\User\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\User\\Desktop\\cmder",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\User\\Desktop\\cmder\\bin;C:\\Users\\User\\Desktop\\cmder\\vendor\\bin;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5;C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\User\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\User\\Desktop\\cmder",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "path_position": "append",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PyCharm Community Edition": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.1.1\\bin;",
+    "SESSIONNAME": "Console",
+    "SVN_SSH": "C:\\\\Program Files\\\\Git\\\\bin\\\\ssh.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\User\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "time_init": "0",
+    "TMP": "C:\\Users\\User\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-3RMUSHK",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-3RMUSHK",
+    "USERNAME": "User",
+    "USERPROFILE": "C:\\Users\\User",
+    "user_aliases": "C:\\Users\\User\\Desktop\\cmder\\config\\user_aliases.cmd",
+    "USER_BUILD": "windows.1",
+    "USER_MAJOR": "2",
+    "USER_MINOR": "27",
+    "USER_PATCH": "0",
+    "verbose_output": "0",
+    "VIPSHOME": "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release",
+    "windir": "C:\\Windows",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Users\\User\\Desktop\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuHk64.dll",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "C:\\Windows\\System32\\ole32.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libcairo-2.dll",
+    "C:\\Windows\\System32\\SHELL32.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libexif-12.dll",
+    "C:\\Windows\\System32\\windows.storage.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libexpat-1.dll",
+    "C:\\Windows\\System32\\shlwapi.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libfontconfig-1.dll",
+    "C:\\Windows\\System32\\shcore.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgif-7.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libintl-8.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgio-2.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgmodule-2.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgsf-1-114.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libjpeg-62.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\liblcms2-2.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\liborc-0.4-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpango-1.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpangoft2-1.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpng16-16.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libtiff-5.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\librsvg-2-2.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libwebp-7.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libwebpdemux-2.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libwebpmux-3.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libz1.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgcc_s_seh-1.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libfreetype-6.dll",
+    "C:\\Windows\\SYSTEM32\\MSIMG32.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpixman-1-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libiconv-2.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libffi-7.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libxml2-2.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libfribidi-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libharfbuzz.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libgdk_pixbuf-2.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpangocairo-1.0-0.dll",
+    "\\\\?\\C:\\Users\\User\\Documents\\reactiguess\\gatsby\\gatsby-site\\node_modules\\sharp\\build\\Release\\libpangowin32-1.0-0.dll",
+    "C:\\Windows\\SYSTEM32\\ntmarta.dll"
+  ]
+}
