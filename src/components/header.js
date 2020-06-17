@@ -150,6 +150,5 @@ const ListItem = styled.li`
 
 const activeStyle = {
   textDecoration: `none`,
-  color: `black`,
-  borderStyle: `double`,
+  boxShadow: `1px 1px 1px red`,
 }

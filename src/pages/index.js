@@ -48,8 +48,8 @@ const HeroButton = styled.button`
 `
 
 const DarkOpacity = styled.div`
-  width: 97%;
-  height: 874px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 33.5%;
   &:hover {

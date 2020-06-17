@@ -6,6 +6,7 @@ import WeatherComponent from "../components/weather"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MakesBox from "../components/MakesBox"
+import TextField from "@material-ui/core/TextField"
 
 const SeventhPage = () => {
   const [city, setCity] = useState({
@@ -33,8 +34,10 @@ const SeventhPage = () => {
 
     for (let i = 0; i < cityData.length; i++) {
       if (
-        city.cityInput.toUpperCase() === cityData[i].name.toUpperCase() &&
-        city.countryInput.toUpperCase() === cityData[i].country.toUpperCase()
+        city.cityInput.toUpperCase().trim() ===
+          cityData[i].name.toUpperCase() &&
+        city.countryInput.toUpperCase().trim() ===
+          cityData[i].country.toUpperCase()
       ) {
         setCity({
           ...city,
@@ -52,19 +55,24 @@ const SeventhPage = () => {
       <SEO title="Weather" />
       <div>
         <form onSubmit={handleSubmit}>
-          <input
+          <TextField
+            variant="filled"
             required
             placeholder="city"
             value={city.cityInput}
             onChange={handleChange}
             type="text"
           />
-          <input
+          <br />
+          <TextField
+            variant="filled"
             required
             placeholder="country"
             onChange={handleChange2}
             value={city.countryInput}
             type="text"
+            inputProps={{ maxLength: 2 }}
+            size="small"
           />
           <button type="submit">Search</button>
         </form>
